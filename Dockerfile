@@ -5,3 +5,5 @@ FROM python:latest
 WORKDIR /usr/app
 
 RUN pip --version
+
+EXPOSE 443
