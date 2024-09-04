@@ -6,4 +6,4 @@ WORKDIR /usr/app
 
 RUN pip --version
 
-EXPOSE 443
+EXPOSE 8000
