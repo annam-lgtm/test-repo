@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  python-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: python-demo-app
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/usr/app
+    command: python python-demo-app.py  # Replace 'app.py' with your application's entry point
